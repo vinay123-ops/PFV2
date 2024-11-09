@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&family=Oswald:wght@200..700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: black;
+  color: black; 
+  line-height: 1.6; 
+}
+
+html {
+  scroll-padding-top: 75px;
+}
+
+p {
+  @apply font-poppins text-gray-700 mb-2;
+}
+
+.link{
+  @apply block text-white transition duration-200 hover:text-hibiscus-400 hover:ease-linear focus:text-white/80 active:text-black/80 motion-reduce:transition-none;
+}
+
+
+body::-webkit-scrollbar {
+  width: 8px; 
+}
+
+body::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1); 
+}
+
+
+body::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.7); 
+  border-radius: 10px;
+}
+
+
+body::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+
+.ml12 .letter {
+  display: inline-block;
+  transform-origin: 50% 100%; 
+  line-height: 1em;
+  color: white;
+}
+
+
+
+
